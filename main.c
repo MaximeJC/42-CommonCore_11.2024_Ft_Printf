@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mgouraud <mgouraud@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 15:26:40 by mgouraud          #+#    #+#             */
-/*   Updated: 2024/12/02 14:50:30 by mgouraud         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "include/ft_printf.h"
 
 	/*
@@ -22,32 +10,6 @@
 	? %x Number in hexadecimal lowercase format
 	? %X Number in hexadecimal uppercase format
 	? %% Print a percent sign
-	*/
-
-	/*
-	? %[flags][width][.precision]specifier
-
-	? Flags:
-	? - : Justifie a gauche (droite par defaut)
-	? + : Force a afficher + ou - pour les nombres
-	? (espace) : Pour les nombres : si aucun chiffre, met un espace
-	? # : Avec x ou X, precede la valeur par 0x ou 0X
-	?	(tant que valeur different de zero)
-	? 0 : Utilise des 0 initiaux pour completer les nombres au lieu d'espaces
-
-	? Width:
-	? (nombre) : Utilise x zeros initiaux pour completer les nombres
-	?	au lieu d'espaces
-	? * : La largeur n'est pas specifiee dans la chaine de format,
-	?	mais comme un argument de valeur entiere supplementaire precedant
-	?	l'argument a formater
-
-	? Precision:
-	? .(nombre) : Pour les spes d'entiers (diuxX), nombre minimum de chiffres a
-	?	ecrire. SI plus court, complete par zeros initiaux.
-	?	Pas tronquee si plus longue.
-	? .* : La largeur n'est pas specifiee dans la chaine de format, mais comme un
-	?	argument de valeur entiere supplementaire precedant l'argument a formater
 	*/
 
 int	main(void)
@@ -117,11 +79,6 @@ int	main(void)
 	fflush(stdout);
 	ft_printf("(%i)\nFt_Printf: ", len);
 	ft_printf("(%i)\n", ft_printf("%%"));
-
-	// printf("\n\n\n");
-	// double truc = 123456789.123456789;
-	// printf("%f\n", truc);
-	// printf("%f", (truc - (double)((int)truc)));
 
 	return (0);
 }
